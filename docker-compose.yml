@@ -1,9 +1,9 @@
-version: "3.8"
+
 services:
   app:
     build: .
-    image: finRadar-panel:latest
-    container_name: finRadar_app
+    image: finradar-panel:latest
+    container_name: finradar_app
     restart: unless-stopped
     env_file: .env
     ports:
@@ -14,7 +14,7 @@ services:
 
   worker:
     build: .
-    image: finRadar-panel:latest
+    image: finradar-panel:latest
     container_name: finRadar_worker
     command: ["python", "app/workers/worker.py"]
     env_file: .env
