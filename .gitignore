@@ -1,0 +1,57 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+
+# --- Виртуальные окружения ---
+venv/
+.env/
+.env.bak/
+*.env
+*.env.*
+
+# --- IDE и системные файлы ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# --- Логи и временные файлы ---
+*.log
+logs/
+tmp/
+.cache/
+*.bak
+*.old
+
+# --- Alembic (если версии генерируются автоматически) ---
+alembic/versions/
+
+# --- Docker ---
+.docker/
+*.pid
+
+# --- Тесты ---
+.coverage
+.pytest_cache/
+htmlcov/
+__tests__/
+tests/
+
+# --- CI/CD ---
+*.coverage
+coverage.xml
+
+# --- Документация и артефакты ---
+*.md~
+*.tmp

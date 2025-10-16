@@ -1,0 +1,51 @@
+# --- Системные и служебные файлы ---
+.git
+.gitignore
+.vscode/
+.idea/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+
+# --- Виртуальное окружение ---
+venv/
+.env/
+.env.bak/
+*.env
+*.env.*
+
+# --- Docker и CI/CD ---
+Dockerfile
+docker-compose.yml
+.docker/
+.tmp/
+.cache/
+logs/
+tmp/
+
+# --- Python build артефакты ---
+build/
+dist/
+*.egg-info/
+*.egg
+
+# --- Тесты и отчёты (если есть) ---
+tests/
+__tests__/
+.coverage
+.pytest_cache/
+htmlcov/
+*.spec.py
+
+# --- Alembic (если не нужно миграции собирать в образ) ---
+alembic/versions/
+alembic.ini
+
+# --- Прочие неиспользуемые файлы ---
+*.md
+*.bak
+*.old
